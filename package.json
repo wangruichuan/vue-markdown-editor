@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7"
+  },
+  "engine-strict": true,
+  "packageManager": "pnpm@7.33.5",
+  "homepage": "https://github.com/wangruichuan/vue-markdown-editor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangruichuan/vue-markdown-editor.git"
+  },
+  "keywords": [
+    "markdown-editor",
+    "vue",
+    "vite",
+    "markdown-ast",
+    "ast"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "in": "pnpm install -r",
+    "clear": "rimraf --glob ./node_modules ./packages/**/node_modules ./packages/**/dist ./pnpm-lock.yaml",
+    "dev:ast": "pnpm -F @markdown/ast-parser dev",
+    "build:ast": "pnpm -F @markdown/ast-parser build",
+    "prettier": "prettier --write .",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "zx": "^8.3.0"
+  },
+  "author": "wangruichuan",
+  "license": "ISC"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@wangruichuan/markdown-editor",
+  "version": "0.1.3",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue3",
+    "markdown",
+    "editor"
+  ],
+  "main": "./dist/markdown-editor.umd.js",
+  "module": "./dist/markdown-editor.js",
+  "types": "./dist/markdown-editor.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite --open",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build"
+  },
+  "dependencies": {
+    "@wangruichuan/markdown-ast-parser": "1.0.0",
+    "emoji-mart-vue-fast": "^15.0.4",
+    "html2pdf.js": "^0.10.3",
+    "monaco-editor": "^0.52.2",
+    "naive-ui": "^2.41.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.13.9",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "npm-run-all2": "^7.0.2",
+    "typescript": "~5.8.0",
+    "vite": "^6.2.1",
+    "vite-plugin-dts": "^4.5.3",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vue-tsc": "^2.2.8"
+  }
+}
