@@ -2,16 +2,27 @@
 layout: page
 sidebar: false
 aside: false
+title: 在线体验
 ---
-<script setup>
-import {Editor} from '@wangruichuan/markdown-editor'
-import "@wangruichuan/markdown-editor/dist/markdown-editor.css"
+<template>
+  <div style="height: 80vh; width: 80%;margin: 20px auto;">
+    <component v-if="EditorComponent" :is="EditorComponent" :style="{border: isDarkMode ? '1px solid rgb(34,34,34)' : '1px solid #ddd'}" v-model="markdown" :dark="isDarkMode" />
+  </div>
+</template>
 
-import {ref,onMounted, watchEffect} from 'vue'
+<script setup>
+import "@wangruichuan/markdown-editor/dist/markdown-editor.css"
+import { ref, onMounted, watchEffect } from 'vue'
+
 const isDarkMode = ref(false);
+const EditorComponent = ref(null);
+
 const checkColorMode = () => {
-  isDarkMode.value = document.documentElement.classList.contains('dark');
+  if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+    isDarkMode.value = document.documentElement.classList.contains('dark');
+  }
 };
+
 const markdown = ref("# Markdown 常见语法\n" +
     "\n" +
     "这是一个用于测试 **Markdown** 语法的文档。它包含了各种常见的 Markdown 元素。\n" +
@@ -82,20 +93,16 @@ const markdown = ref("# Markdown 常见语法\n" +
     "\n" +
     "---");
 
-onMounted(() => {
-  checkColorMode();
-  const observer = new MutationObserver(checkColorMode);
-  observer.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ['class']
-  });
+onMounted(async () => {
+  
+    checkColorMode();
+    const observer = new MutationObserver(checkColorMode);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+    const { Editor } = await import('@wangruichuan/markdown-editor');
+    EditorComponent.value = Editor;
+    
 });
-
 </script>
-
-<div style="height: 80vh; width: 80%;margin: 20px auto;" >
-<Editor :style="{border:isDarkMode?'1px solid rgb(34,34,34)':'1px solid #ddd'}"
-      v-model="markdown"
-:dark="isDarkMode"
-  />
-</div>

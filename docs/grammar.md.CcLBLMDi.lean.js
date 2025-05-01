@@ -1,0 +1,1 @@
+import{_ as s,c as e,o as n,ae as i}from"./chunks/framework.CJNgEQ_i.js";const u=JSON.parse('{"title":"Markdown语法","description":"","frontmatter":{},"headers":[],"relativePath":"grammar.md","filePath":"grammar.md"}'),t={name:"grammar.md"};function p(o,a,l,d,c,h){return n(),e("div",null,a[0]||(a[0]=[i("",32)]))}const g=s(t,[["render",p]]);export{u as __pageData,g as default};

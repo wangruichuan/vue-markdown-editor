@@ -1,0 +1,1 @@
+import{_ as d,c as r,o as e,ae as l}from"./chunks/framework.CJNgEQ_i.js";const c=JSON.parse('{"title":"快捷键","description":"","frontmatter":{},"headers":[],"relativePath":"hotkey.md","filePath":"hotkey.md"}'),a={name:"hotkey.md"};function o(n,t,i,h,_,C){return e(),r("div",null,t[0]||(t[0]=[l("",2)]))}const A=d(a,[["render",o]]);export{c as __pageData,A as default};
