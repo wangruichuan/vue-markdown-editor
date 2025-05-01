@@ -7,8 +7,10 @@
 ![预览图](https://pic1.imgdb.cn/item/67ffe28688c538a9b5d499d2.png) 
 
 # 快速开始
+- 文档地址：https://wangruichuan.github.io/vue-markdown-editor/online-experience.html
+
 ## 在线尝试
-可以直接在 [在线尝试](/online-experience)  上进行在线尝试。
+可以直接在 [在线尝试](https://wangruichuan.github.io/vue-markdown-editor/online-experience.html)  上进行在线尝试。
 
 ## 安装
 
