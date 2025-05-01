@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/vue-markdown-editor/",
   title: "MarkDown Editor for Vue3",
   description: "基于Vue3的Markdown编辑器组件",
   themeConfig: {

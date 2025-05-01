@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as t,ae as n}from"./chunks/framework.ChBuoQPj.js";const o=JSON.parse('{"title":"快速开始","description":"","frontmatter":{},"headers":[],"relativePath":"start.md","filePath":"start.md"}'),l={name:"start.md"};function h(p,s,e,k,r,d){return t(),a("div",null,s[0]||(s[0]=[n("",7)]))}const g=i(l,[["render",h]]);export{o as __pageData,g as default};

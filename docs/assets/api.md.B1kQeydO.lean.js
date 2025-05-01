@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ae as l}from"./chunks/framework.ChBuoQPj.js";const o=JSON.parse('{"title":"API","description":"","frontmatter":{},"headers":[],"relativePath":"api.md","filePath":"api.md"}'),t={name:"api.md"};function h(k,s,p,e,E,r){return n(),a("div",null,s[0]||(s[0]=[l("",66)]))}const g=i(t,[["render",h]]);export{o as __pageData,g as default};

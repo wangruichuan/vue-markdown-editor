@@ -1,1 +1,0 @@
-import{_ as i,c as a,o as n,ae as t}from"./chunks/framework.CJNgEQ_i.js";const d=JSON.parse('{"title":"Monaco原生配置项","description":"","frontmatter":{},"headers":[],"relativePath":"monaco.md","filePath":"monaco.md"}'),h={name:"monaco.md"};function k(l,s,p,e,r,o){return n(),a("div",null,s[0]||(s[0]=[t("",29)]))}const F=i(h,[["render",k]]);export{d as __pageData,F as default};

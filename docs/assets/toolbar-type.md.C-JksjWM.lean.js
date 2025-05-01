@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ae as t}from"./chunks/framework.ChBuoQPj.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"toolbar-type.md","filePath":"toolbar-type.md"}'),h={name:"toolbar-type.md"};function k(l,s,p,e,E,F){return n(),a("div",null,s[0]||(s[0]=[t("",2)]))}const g=i(h,[["render",k]]);export{d as __pageData,g as default};
